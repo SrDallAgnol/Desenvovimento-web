@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(205, 162, 226);
+    text-align: center;
+
+}
+
+p {
+    font-family: fantasy;
+}
+
+h1 {
+    color: blueviolet;
+    text-transform: capitalize;
+    font-size:xx-large;
+}
+
+img {
+    width: 10cm;
+    height: 11cm;
+    border-radius: 50%
+    
+}
+link {
+    color: darkviolet;
+}
+div {
+    border-radius: 5cm;
+    margin-top: 2cm;
+    border: 10px solid;
+    margin: auto
+}
