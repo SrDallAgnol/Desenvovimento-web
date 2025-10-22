@@ -1,103 +1,44 @@
-header, nav {
-    background-color: #3498db;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    display: block;
-  }
+.flex-container {
+  display: flex;
 
-  main {
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden; 
-    padding: 20px 0;
-  }
+  flex-direction: row;
+  gap: 20px;
 
-  .conteudo {
-    float: left;
-    width: 70%;
-    padding-right: 2%;
-  }
+  width: 80%;
+  max-width: 700px;
+  height: 250px;
+  padding: 10px;
+  border: 3px dashed blue;
+  background-color: beige;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+}
 
-  aside {
-    float: right;
-    width: 25%;
-    background-color: #f0f0f0;
-    padding: 10px;
-  }
+.item {
+  flex: 1;
 
-  .cartao {
-    background-color: white;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-    padding: 15px;
-    display: block;
-  }
+  background-color: chartreuse;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 1.5cm;
+  border-radius: 8px;
+  height: 100px;
+  font-weight: bold;
+  transition: backgroud-color 0.3s;
+}
 
-  .cartao img {
-    width: 100%;
-    border-radius: 5px;
-  }
+.item:nth-child(2) {
+  background-color: #e67e22;
+}
 
-  aside ul {
-    list-style: none;
-    padding: 0;
-  }
+.item:nth-child(3) {
+  background-color: #9b59b6;
+}
 
-  aside li {
-    margin-bottom: 10px;
-  }
-
-
-  footer {
-    clear: both;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    display: block;
-  }
-
-  img {
-    width: 500px;
-    height: auto;
-  }
-
-  @media (max-width: 768px) {
-    .conteudo, aside {
-      float: none;
-      width: 100%;
-      padding: 0;
-    }
+p.dica {
+  background-color: #fff3cd;
+  border-left: 5px solid #ffc107;
   
-    main {
-      padding: 10px;
-    }
-  
-    header, nav, footer {
-      text-align: center;
-      padding: 10px;
-    }
-  
-    .cartao {
-      margin-bottom: 15px;
-      padding: 10px;
-    }
-  
-    .cartao h2 {
-      font-size: 1.2em;
-    }
-  
-    .cartao p {
-      font-size: 1em;
-    }
-  
-    aside ul {
-      text-align: center;
-    }
-  
-    aside li {
-      margin-bottom: 8px;
-    }
-  }
+}
