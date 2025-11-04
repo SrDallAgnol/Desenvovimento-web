@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0A74DA;
+    background-color: #640ada;
     color: #fff;
     padding: 15px 40px;
     position: fixed;
@@ -48,7 +48,7 @@ header {
 /* === HERO SECTION === */
 .hero {
     height: 90vh;
-    background: linear-gradient(to right, #0A74DA, #00A896);
+    background: linear-gradient(to right, #530ada, #9256d8);
     color: white;
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@ header {
 
 .btn {
     background-color: white;
-    color: #0A74DA;
+    color: #640ada;
     padding: 10px 20px;
     border-radius: 6px;
     text-decoration: none;
@@ -175,7 +175,7 @@ input, textarea {
 
 /* === RODAPÉ === */
 footer {
-    background-color: #0A74DA;
+    background-color: #6b0ada;
     color: white;
     text-align: center;
     padding: 20px;
