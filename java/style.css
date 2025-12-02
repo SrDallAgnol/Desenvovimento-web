@@ -1,0 +1,21 @@
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    transition: 0.3s;
+}
+
+.escondido {
+    display: none;
+}
+
+body {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.dark {
+    background-color: #111;
+    color: white;
+}
