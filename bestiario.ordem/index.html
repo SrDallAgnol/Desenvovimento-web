@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bestiário • Ordem Paranormal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TELA INICIAL -->
+<div class="page home" id="home">
+  <h1>BESTIÁRIO</h1>
+  <div class="phrase">
+    O paranormal não vem para a nossa realidade de maneira fácil.<br>
+    Ou pelo menos... as coisas deveriam ser assim.
+  </div>
+  <div class="elements">
+    <div class="elem sangue" onclick="show('sangue')">SANGUE</div>
+    <div class="elem morte" onclick="show('morte')">MORTE</div>
+    <div class="elem conhecimento" onclick="show('conhecimento')">CONHECIMENTO</div>
+    <div class="elem energia" onclick="show('energia')">ENERGIA</div>
+  </div>
+  <div class="fear-icon" onclick="show('fear')">☠️</div>
+</div>
+
+<!-- PÁGINA SANGUE -->
+<div class="page" id="sangue">
+  <button class="back" onclick="home()">← VOLTAR</button>
+  <div class="header sangue">ELEMENTO • SANGUE</div>
+  <div class="grid">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4d-n9A2k9lHvqDVVdcAdyU5gcSqpVt8_Nmg&s" alt="Zumbi de Sangue">
+      <div class="card-body">
+        <h2>Zumbi de Sangue</h2>
+        <p class="pv">PV ≈ 20-40</p>
+        <p>Cadáver reanimado com pele vermelha rachada, veias pulsantes visíveis e olhos injetados.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/ac/8d/38/ac8d3882166826df00fb26e1388e71e6.jpg" alt="Zumbi Bestial">
+      <div class="card-body">
+        <h2>Zumbi Bestial</h2>
+        <p class="pv">PV ≈ 80-120</p>
+        <p>Versão deformada com garras, focinho animal e músculos expostos pulsando sangue.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/9c/0d/8c/9c0d8c7d09485cc5e97a2cb738df017d.jpg" alt="Dama de Sangue">
+      <div class="card-body">
+        <h2>Dama de Sangue</h2>
+        <p class="pv">PV ≈ 60-100</p>
+        <p>Mulher etérea pálida, vestido rasgado encharcado de sangue, olhos sangrando e garras longas.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/be/86/e5/be86e5295f4400a6b973c8101a84059b.jpg" alt="Titã de Sangue">
+      <div class="card-body">
+        <h2>Titã de Sangue</h2>
+        <p class="pv">PV ≈ 200-300</p>
+        <p>Gigante de carne coagulada, veias grossas expostas e boca irregular cheia de dentes.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://cdnb.artstation.com/p/assets/images/images/055/604/233/large/lucas-ferraz-carninal.jpg?1684847335&dl=1" alt="Carniçal">
+      <div class="card-body">
+        <h2>Minotauro</h2>
+        <p class="pv">PV ≈ 150-250</p>
+        <p>É basicamente um minotauro com uns negócios vermelhos e um machadão.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://pbs.twimg.com/media/G5goxRJX0AEiBIp.jpg" alt="Quibungo">
+      <div class="card-body">
+        <h2>Quibungo</h2>
+        <p class="pv">PV ≈ 180-280</p>
+        <p>Monstro alto com quatro braços, bocarra nas costas e pele negra escamosa.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmLDFh5P0s95nA3a5l_f3CUrK4b-xsXg2Y0g&s" alt="Besta de Sangue">
+      <div class="card-body">
+        <h2>Besta de Sangue</h2>
+        <p class="pv">PV ≈ 250-350</p>
+        <p>Quadrúpede obeso, pele vermelha esticada e tendões pulsantes visíveis.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://i.ytimg.com/vi/5Eh4bMqZ94o/default.jpg" alt="Aberração de Carne">
+      <div class="card-body">
+        <h2>Aberração de Carne</h2>
+        <p class="pv">PV ≈ 40-80</p>
+        <p>Massa pulsante de carne viva, com olhos e bocas surgindo aleatoriamente na superfície.</p>
+      </div>
+    </div>
+  </div>
+  <div class="reliquia">
+    <h2>RELÍQUIA: O DIABO</h2>
+    <p>Portador da Relíquia de Sangue. Oferece pactos de obsessão, transforma corpos em carnificina e amplifica emoções extremas.</p>
+  </div>
+</div>
+
+<!-- PÁGINA MORTE -->
+<div class="page" id="morte">
+  <button class="back" onclick="home()">← VOLTAR</button>
+  <div class="header morte">ELEMENTO • MORTE</div>
+  <div class="grid">
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/5c/15/7e/5c157eb226c1db12a192c4a64a04e4e2.jpg" alt="Nidere">
+      <div class="card-body">
+        <h2>Nidere</h2>
+        <p class="pv">PV ≈ 300-400</p>
+        <p>Massa de lodo negro com ossos flutuantes, regenera em poças e exsuda putrefação.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://i.pinimg.com/474x/86/0b/98/860b98c140f6640ae0eddef395343251.jpg" alt="Existido de Morte">
+      <div class="card-body">
+        <h2>Existido de Morte</h2>
+        <p class="pv">PV ≈ 200-300</p>
+        <p>Corpo musculoso cinzento, rosto craniano e aura de decadência temporal.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://cdnb.artstation.com/p/assets/images/images/055/604/233/large/lucas-ferraz-carninal.jpg?1684847335&dl=1" alt="Carniçal Preto">
+      <div class="card-body">
+        <h2>Carniçal</h2>
+        <p class="pv">PV ≈ 250-350</p>
+        <p>uma criatura humanoide musculosa com cabeça de cranio.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&q=80" alt="Tirano de Lodo">
+      <div class="card-body">
+        <h2>Tirano de Lodo</h2>
+        <p class="pv">PV ≈ 400+</p>
+        <p>Colosso de lodo viscoso, tentáculos ossudos e absorve vida ao toque.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&q=80" alt="Enraizado">
+      <div class="card-body">
+        <h2>Enraizado</h2>
+        <p class="pv">PV ≈ 150-250</p>
+        <p>Corpo humanoide coberto de raízes pretas, olhos vazios e crescimento fúngico.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1618359057154-e21d6500c2b5?auto=format&fit=crop&q=80" alt="Escutado">
+      <div class="card-body">
+        <h2>Escutado</h2>
+        <p class="pv">PV ≈ 100-180</p>
+        <p>Figura esguia com ouvidos gigantes, ouve sussurros e causa alucinações auditivas.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504197834567-334897a2aa47?auto=format&fit=crop&q=80" alt="Marionete">
+      <div class="card-body">
+        <h2>Marionete</h2>
+        <p class="pv">PV ≈ 120-200</p>
+        <p>Corpo controlado por fios invisíveis, movimentos jerk e rosto inexpressivo.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&q=80" alt="Aracnasita">
+      <div class="card-body">
+        <h2>Aracnasita</h2>
+        <p class="pv">PV ≈ 180-280</p>
+        <p>Aranha humanóide com pernas longas, teias de lodo e veneno necrosante.</p>
+      </div>
+    </div>
+  </div>
+  <div class="reliquia">
+    <h2>RELÍQUIA: O DEUS DA MORTE</h2>
+    <p>Manifestação da Relíquia de Morte. Distorce o tempo, cria Santo Berços e causa decadência instantânea.</p>
+  </div>
+</div>
+
+<!-- PÁGINA CONHECIMENTO -->
+<div class="page" id="conhecimento">
+  <button class="back" onclick="home()">← VOLTAR</button>
+  <div class="header conhecimento">ELEMENTO • CONHECIMENTO</div>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&q=80" alt="Sem-Rosto">
+      <div class="card-body">
+        <h2>Sem-Rosto</h2>
+        <p class="pv">PV ≈ 100-180</p>
+        <p>Humanoide sem face, pele lisa, imita vozes e aparências perfeitamente.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504197834567-334897a2aa47?auto=format&fit=crop&q=80" alt="Parasita de Culpa">
+      <div class="card-body">
+        <h2>Parasita de Culpa</h2>
+        <p class="pv">PV ≈ 80-150</p>
+        <p>Forma etérea que se infiltra na mente, faz reviver traumas visivelmente.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1617791160505-6f00504e3519?auto=format&fit=crop&q=80" alt="Espreitador">
+      <div class="card-body">
+        <h2>Espreitador</h2>
+        <p class="pv">PV ≈ 120-200</p>
+        <p>Figura sombria que aparece em reflexos, olhos múltiplos e causa paranoia.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1576765607924-3f7b8410a787?auto=format&fit=crop&q=80" alt="Vulto">
+      <div class="card-body">
+        <h2>Vulto</h2>
+        <p class="pv">PV ≈ 60-120</p>
+        <p>Sombra humanóide flutuante, sussurra segredos e drena sanidade.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&q=80" alt="Melancolia">
+      <div class="card-body">
+        <h2>Melancolia</h2>
+        <p class="pv">PV ≈ 150-220</p>
+        <p>Entidade cinzenta com rosto choroso, induz depressão profunda ao olhar.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1618359057154-e21d6500c2b5?auto=format&fit=crop&q=80" alt="Rastejador Sombrio">
+      <div class="card-body">
+        <h2>Rastejador Sombrio</h2>
+        <p class="pv">PV ≈ 180-260</p>
+        <p>Criatura baixa e alongada, move-se por sombras e rouba memórias.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&q=80" alt="Anjo Caído">
+      <div class="card-body">
+        <h2>Anjo Caído</h2>
+        <p class="pv">PV ≈ 200-300</p>
+        <p>Figura alada com asas quebradas, oferece conhecimento proibido em troca de alma.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504197834567-334897a2aa47?auto=format&fit=crop&q=80" alt="Olho Flutuante">
+      <div class="card-body">
+        <h2>Olho Flutuante</h2>
+        <p class="pv">PV ≈ 50-100</p>
+        <p>Olho gigante flutuante com tentáculos, observa e transmite visões perturbadoras.</p>
+      </div>
+    </div>
+  </div>
+  <div class="reliquia">
+    <h2>RELÍQUIA: A MAGISTRADA / MÁSCARA DO DESESPERO</h2>
+    <p>Portadora da Relíquia de Conhecimento. Protege o equilíbrio, resolve enigmas e usa Medo como ferramenta.</p>
+  </div>
+</div>
+
+<!-- PÁGINA ENERGIA -->
+<div class="page" id="energia">
+  <button class="back" onclick="home()">← VOLTAR</button>
+  <div class="header energia">ELEMENTO • ENERGIA</div>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1618359057154-e21d6500c2b5?auto=format&fit=crop&q=80" alt="Perturbado de Energia">
+      <div class="card-body">
+        <h2>Perturbado de Energia</h2>
+        <p class="pv">PV ≈ 120-200</p>
+        <p>Forma plasmática instável, faíscas elétricas e rosto distorcido em agonia.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&q=80" alt="Anárquico">
+      <div class="card-body">
+        <h2>Anárquico</h2>
+        <p class="pv">PV ≈ 100-180</p>
+        <p>Entidade caótica de energia pura, distorce objetos e causa surtos elétricos.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504197834567-334897a2aa47?auto=format&fit=crop&q=80" alt="Tempestuoso">
+      <div class="card-body">
+        <h2>Tempestuoso</h2>
+        <p class="pv">PV ≈ 200-300</p>
+        <p>Tempestade viva com raios azuis, corpo nebuloso e olhos elétricos.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&q=80" alt="Viajante">
+      <div class="card-body">
+        <h2>Viajante</h2>
+        <p class="pv">PV ≈ 150-250</p>
+        <p>Figura translúcida que pisca entre realidades, deixa rastros de estática.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1576765607924-3f7b8410a787?auto=format&fit=crop&q=80" alt="Espectro Inesquecível">
+      <div class="card-body">
+        <h2>Espectro Inesquecível</h2>
+        <p class="pv">PV ≈ 180-280</p>
+        <p>Alma plasmática brilhante, grita e causa distorções visuais intensas.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1617791160505-6f00504e3519?auto=format&fit=crop&q=80" alt="Telopsia">
+      <div class="card-body">
+        <h2>Telopsia</h2>
+        <p class="pv">PV ≈ 80-140</p>
+        <p>Entidade que altera percepção de distância, aparece como borrão distante.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&q=80" alt="Sukkalgir">
+      <div class="card-body">
+        <h2>Sukkalgir</h2>
+        <p class="pv">PV ≈ 220-320</p>
+        <p>Criatura de energia caótica, múltiplos membros elétricos e aura instável.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504197834567-334897a2aa47?auto=format&fit=crop&q=80" alt="Anfitrião">
+      <div class="card-body">
+        <h2>Anfitrião (Forma Menor)</h2>
+        <p class="pv">PV ≈ 300+</p>
+        <p>Entidade imensa de energia, corpo fragmentado e olhos infinitos de caos.</p>
+      </div>
+    </div>
+  </div>
+  <div class="reliquia">
+    <h2>RELÍQUIA: O ANFITRIÃO</h2>
+    <p>Portador da Relíquia de Energia. Causa caos imprevisível, distorce memórias e sobrecarrega a realidade.</p>
+  </div>
+</div>
+
+<!-- PÁGINA MEDO (escondida) -->
+<div class="page fear-page" id="fear">
+  <h1>☠️ O MEDO É O COMBUSTÍVEL ☠️</h1>
+  <p style="max-width:800px; margin:40px auto;">
+    Ele não tem Relíquia própria... ele alimenta todas as outras.<br>
+    Você realmente quer continuar olhando para o abismo?
+  </p>
+  <button onclick="home()" style="margin-top:60px; padding:20px 60px; font-size:1.8rem; background:#400; border:none; color:white; cursor:pointer; border-radius:12px;">
+    FECHAR ANTES QUE SEJA TARDE
+  </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
