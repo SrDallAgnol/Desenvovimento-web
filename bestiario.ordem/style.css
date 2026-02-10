@@ -9,14 +9,138 @@
   --bg: #0a0a0a;
 }
 
+.aviso.urgente {
+  background: linear-gradient(135deg, #b71c1c, #d32f2f);
+  color: white;
+  padding: 20px 24px;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: bold;
+  border: 3px solid #ffca28;
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 700px;
+  box-shadow: 0 6px 20px rgba(183, 28, 28, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@keyframes pulsa {
+  0% { box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(255, 82, 82, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 82, 82, 0); }
+}
+
+.urgente {
+  animation: pulsa 2s infinite;
+}
+
 * { margin:0; padding:0; box-sizing:border-box; }
 
 body {
   font-family: Georgia, serif;
-  background: #0a0a0a;  /* cor sólida preta temporária */
+  background: #0a0a0a url('assets/ordo.png') no-repeat center center fixed;
+  background-size: cover;           /* ou contain, dependendo do efeito desejado */
+  background-position: center;
   color: var(--text);
   overflow-x: hidden;
+  position: relative;               /* necessário para camadas Z */
+  min-height: 100vh;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.75);   /* escurece a imagem para legibilidade */
+  z-index: -2;                          /* imagem fica em Z = -3 (atrás dessa camada) */
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.4) 100%);
+  z-index: -1;                          /* entre a imagem e o conteúdo */
+  pointer-events: none;
+}
+
+/* Conteúdo principal fica na frente (Z positivo implícito) */
+.page, .home, .elements, .card, .reliquia, .back, .fear-icon {
+  position: relative;
+  z-index: 1;                           /* garante que tudo fique acima das camadas de fundo */
+}
+
+/* Efeito parallax sutil no scroll (sensação de profundidade no eixo Z) */
+body {
+  perspective: 1px;                     /* ativa perspectiva 3D */
+  transform-style: preserve-3d;
+}
+
+.page {
+  transform: translateZ(0);             /* conteúdo fica na camada "0" */
+}
+
+/* Para dar mais profundidade à imagem de fundo (opcional - parallax leve) */
+body {
+  background-attachment: fixed;         /* já está fixed, mas reforça */
+}
+
+.home {
+  transform: translateZ(-0.5px) scale(1.5);  /* experimente valores entre -0.2 e -1 */
+  transform-origin: center;
+}
+/* Camada de fundo com controle total de Z */
+.background-layer {
+  position: fixed;
+  inset: 0;
+  background: url('assets/ordo.png') no-repeat center center;
+  background-size: cover;
+  z-index: -3;                        /* bem atrás de tudo */
+  transform: translateZ(-1px) scale(2); /* valor negativo em Z + scale para parallax mais perceptível */
+  transform-origin: center;
+}
+
+/* Ativa perspectiva 3D no body */
+body {
+  perspective: 1px;                   /* valor pequeno = parallax sutil; aumente para 2px–5px se quiser mais dramático */
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Georgia, serif;
+  color: var(--text);
+  background: #0a0a0a;                /* cor fallback */
+}
+
+/* Camadas de overlay (ficam entre a imagem e o conteúdo) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.75);
+  z-index: -2;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 30%, rgba(0,0,0,0.5) 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Todo conteúdo principal fica na camada "0" ou positiva */
+.page, .home, .elements, .elem, .card, .reliquia, .back, .fear-icon, .header, .grid {
+  position: relative;
+  z-index: 1;
+  transform: translateZ(0);           /* força ficar na camada frontal */
+}
+
 
 .home, .phrase, .elements, .elem {
   display: flex !important;
